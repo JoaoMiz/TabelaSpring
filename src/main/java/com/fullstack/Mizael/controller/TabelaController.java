@@ -18,19 +18,19 @@ public class TabelaController {
 
     @PostMapping(path="/adicionar")
     public @ResponseBody String adicionarNome(@RequestParam String name ,
-    @RequestParam String cpf ,
+    @RequestParam String cpf /*,
     @RequestParam String dataNascimento,
     @RequestParam Double salario,
     @RequestParam String email,
-    @RequestParam String endereco
+    @RequestParam String endereco*/
     ) {
         Tabela u = new Tabela();
         u.setNome(name);
         u.setCpf(cpf);
-        u.setDataNascimento(dataNascimento);
+/*        u.setDataNascimento(dataNascimento);
         u.setSalario(salario);
         u.setEmail(email);
-        u.setEndereco(endereco);
+        u.setEndereco(endereco);*/
         tabela.save(u);
         return "Salvo";
     }

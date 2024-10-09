@@ -20,5 +20,13 @@ public class Tabela {
      private Double salario;
      private String email;
      private String endereco;
-
+    public Tabela(){
+        //Construtor padrão
+        this.nome = "";
+        this.cpf = "";
+        this.dataNascimento = "";
+        this.salario = 0.0;
+        this.email = "";
+        this.endereco = "";
+    }
 }
